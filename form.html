@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 350px;
+            gap: 10px;
+            border: 2px solid black;
+            border-radius: 1px;
+            height: fit-content;
+            background-color: darkgrey;
+        }
+
+        .form-container{ 
+           display: flex;
+           justify-content: center;
+           height: 100vh; 
+           align-items: center;
+           background-color: antiquewhite;
+
+        }
+        .btn-container{
+            display: flex;
+            justify-content: end;
+        }
+        form input{
+            outline: none;
+            border-radius: 6px;
+            border: none;
+            padding: 10px 15px;
+            background-color: white;
+        }
+        form input[type="submit"]{
+            background-color: rgb(61, 47, 255);
+            color: white;
+            font-weight: 700;
+            letter-spacing: 8px;
+            transition: all 3s;
+
+        }
+        form input[type="submit"]:hover{
+            letter-spacing: 1px;
+            background-color: #fefefe;
+            color: brown;
+        }
+*{
+    padding: 0;
+    margin: 0;
+}
+.form-container form.radio-container{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.form-container form .radio-container div{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    gap: 4px;
+}
+@media(max-width:664px){
+    .form-container{
+        padding: 0 10px;
+        background-color: aquamarine;
+            }
+            form{
+                width:100%;
+                padding: 50px 20px;
+            }
+}
+@media(max-width:390px){
+    .form-container{
+        background-color: brown;
+        padding: 0 10px;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="form-container">
+    <form >
+        <input type="text" name="name" placeholder="enter your name" required/>
+        <input type="text"  required placeholder="enter your email">
+        <div class="radio-container">
+        <label for="">gender</label>
+        <div>
+       <label><input type="radio" name="gender" value="male">male</label>
+      <label>  <input type="radio" name="gender" value="female">female</label>
+       
+        </div></div>
+        <input type="date">
+        <input type="password" required placeholder="enter your password">
+        <input type="datetime-local">
+        <input type="file" required placeholder="select file">
+        <input type="range">
+        <input type="search" required placeholder="search">
+        <input type="tel" required placeholder="phn number">
+        <input type="reset">
+        <div class="btn-container">
+        <input type="submit" value="sumbit">
+        </div>
+    </form>
+</div>
+<script></script>
+<script src=""></script>
+<noscript>your browser doesnt support javascript.</noscript>
+</body>
+</html>
